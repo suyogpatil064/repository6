@@ -16,8 +16,7 @@ public class Base {
 	static WebDriver driver;
 	public static Properties prop;
 	static String[][] dataArray; // ArrayList containing excel sheet
-//	static String maxPrice;
-//	static String searchQuery;
+
 	static List<WebElement> names; // extract names of first 5 products
 	static List<WebElement> prices; // extract prices of first 5 products
 	static ExtentReports reports;
