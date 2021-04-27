@@ -25,6 +25,8 @@ public class resultsPage extends Base{
 		
 		driver.findElement(searchBar).clear();
 //		Thread.sleep(5000);
+		driver.findElement(searchBar).sendKeys(Keys.CONTROL + "a");
+		driver.findElement(searchBar).sendKeys(Keys.DELETE);
 		driver.findElement(searchBar).sendKeys(searchQuery + Keys.ENTER);
 		titleTest.log(Status.INFO, "Search query for " + searchQuery + " entered");
 	}
@@ -87,10 +89,11 @@ public class resultsPage extends Base{
 			// display names of first 5 products and price of first product
 			public static void displayResults() {
 				System.out.println("Names of first 5 products are:");
-				for (int i = 1; i < 6; i++) {
+					for (int i = 1; i < 6; i++) {
 					System.out.println(i + ". " + names.get(i - 1).getText());
-				}
-				System.out.println("Price of first product is: ");
-				System.out.println(prices.get(0).getText().substring(1));
+					System.out.println("Price of first product is: ");
+					System.out.println(prices.get(0).getText().substring(1));
+				
 			}
+}
 }

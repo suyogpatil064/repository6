@@ -5,7 +5,7 @@
     <classes>
       <class name="FlipKart.Main">
         <methods>
-          <include name="checkTitle" invocation-numbers="1"/>
+          <include name="checkTitle" invocation-numbers="0 1 2 3"/>
           <include name="setDriver"/>
           <include name="closeBrowser"/>
           <include name="setProperty"/>
