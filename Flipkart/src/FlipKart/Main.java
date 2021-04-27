@@ -81,7 +81,7 @@ public class Main extends Base{
 	@AfterTest
 	public void closeBrowser() {
 		
-		driver.close();
+		driver.quit();
 		reports.flush();
 	}
 	
